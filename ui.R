@@ -112,7 +112,12 @@ ui <- shinyUI(navbarPage(theme = shinythemes::shinytheme("united"),"multichull",
                                                tabPanel("Authors",
                                                         h2("Authors page"),
                                                         br(),
-                                                        tags$a(href='https://www.universiteitleiden.nl/en/staffmembers/jeffrey-durieux#tab-1', 'Jeffrey Durieux', target = '_blank'))
+                                                        tags$a(href='https://www.universiteitleiden.nl/en/staffmembers/jeffrey-durieux#tab-1', 'Jeffrey Durieux', target = '_blank')),
+                                               tabPanel("License",
+                                                        h2(""),
+                                                        br(),
+                                                        tags$a(href='https://www.gnu.org/licenses/gpl-3.0.txt', 'GPL version 3', target = '_blank')
+                                                        )
                                   )#end navlistpanel
 
                          )# end tabPanel
