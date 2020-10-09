@@ -97,6 +97,10 @@ ui <- shinyUI(navbarPage(theme = shinythemes::shinytheme("united"),"multichull",
                                   navlistPanel("CHull",id='info',br(), well = F,selected = "Details",
                                                tabPanel("Details",
                                                         h2("Details page"),
+                                                        h3('Software details'),
+                                                        'Software status: this is an alpha version.',
+                                                        br(),
+                                                        'Please report bugs and errors to: j.durieux@fsw.leidenuniv.nl or open an issue on', tags$a(href='https://github.com/jeffreydurieux/multichull_shiny','GitHub', target = '_blank'),
                                                         br(),
                                                         h3('youtube video tutorials here:')),
 
@@ -114,9 +118,9 @@ ui <- shinyUI(navbarPage(theme = shinythemes::shinytheme("united"),"multichull",
                                                         br(),
                                                         tags$a(href='https://www.universiteitleiden.nl/en/staffmembers/jeffrey-durieux#tab-1', 'Jeffrey Durieux', target = '_blank')),
                                                tabPanel("License",
-                                                        h2(""),
+                                                        h3("Software is currently licensed under a:"),
                                                         br(),
-                                                        tags$a(href='https://www.gnu.org/licenses/gpl-3.0.txt', 'GPL version 3', target = '_blank')
+                                                        tags$a(href='https://www.gnu.org/licenses/gpl-3.0.txt', 'GNU GPL version 3', target = '_blank')
                                                         )
                                   )#end navlistpanel
 
