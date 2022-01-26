@@ -7,7 +7,7 @@ ui <- shinyUI(navbarPage(theme = shinythemes::shinytheme("united"),"multichull",
                                   sidebarLayout(
                                     sidebarPanel(
                                       fileInput(inputId = 'loadfile',label = "Select file:",
-                                                multiple = FALSE)
+                                                multiple = FALSE, accept = '.csv')
 
                                     ),# end sidebarPanel
 
